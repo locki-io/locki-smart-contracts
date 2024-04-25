@@ -29,4 +29,10 @@ pub trait Contract {
         let address_is_whitelisted = self.whitelisted_addresses().contains_key(&address);
         address_is_whitelisted
     }
+
+    #[view(getWhitelistedAddressesLength)]
+    fn get_whitelisted_addresses_length(&self) -> usize {
+        let whitelisted_addresses_length = self.whitelisted_addresses().len();
+        whitelisted_addresses_length
+    }
 }

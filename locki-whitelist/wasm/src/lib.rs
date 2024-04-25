@@ -5,9 +5,9 @@
 ////////////////////////////////////////////////////
 
 // Init:                                 1
-// Endpoints:                            3
+// Endpoints:                            4
 // Async Callback (empty):               1
-// Total number of exported functions:   5
+// Total number of exported functions:   6
 
 #![no_std]
 #![allow(internal_features)]
@@ -23,6 +23,7 @@ multiversx_sc_wasm_adapter::endpoints! {
         addNewAddressToWhitelist => add_new_address_to_whitelist
         removeAddressToWhitelist => remove_address_from_whitelist
         isAddressWhitelisted => is_address_whitelisted
+        getWhitelistedAddressesLength => get_whitelisted_addresses_length
     )
 }
 
